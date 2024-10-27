@@ -42,3 +42,10 @@ let data = [
   data.sort((a, b) => a.age - b.age);
 
   console.log(data);
+
+  data.sort((a, b) => a.name.localeCompare(b.name));
+
+  console.log(data);
+
+  let mayoresDe30 = data.filter(persona => persona.age > 30);
+  console.log(mayoresDe30);
