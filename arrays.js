@@ -70,3 +70,10 @@ let data = [
       }
     });
     console.log(number1, number2, resto)
+
+    // array numbers 2
+    const numberA = ["1", "2", "4", "1", "3", "4", "1", "3", "2"]
+    const unique_number_set = new Set(numberA);
+    const numberSet = [unique_number_set];
+    console.log(numberSet);
+
