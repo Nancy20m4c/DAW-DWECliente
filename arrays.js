@@ -92,3 +92,20 @@ for (const name in nameAgeMap) {
   console.log(`${name} is ${nameAgeMap[name]} years old.`);
 }
 
+
+//primitiva 
+function generarCombinacionPrimitiva() {
+  const numeros = [];
+  while (numeros.length < 6) {
+    const numero = Math.floor(Math.random() * 49) + 1;
+    if (!numeros.includes(numero)) {
+      numeros.push(numero);
+    }
+  }
+  return numeros.sort((a, b) => a - b); 
+}
+
+for (let i = 0; i < 50; i++) {
+  const combinacion = generarCombinacionPrimitiva();
+  console.log(combinacion);
+}
