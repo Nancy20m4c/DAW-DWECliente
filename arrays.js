@@ -77,3 +77,18 @@ let data = [
     const numberSet = [unique_number_set];
     console.log(numberSet);
 
+    //map claves y edades
+    // Crear un objeto vacío para almacenar nombres y edades
+const nameAgeMap = {};
+
+nameAgeMap["Edu"] = 4;
+nameAgeMap["Bruno"] = 25;
+nameAgeMap["Carlos"] = 35;
+nameAgeMap["Jaume"] = 4
+
+nameAgeMap["Edu"] = 2;
+
+for (const name in nameAgeMap) {
+  console.log(`${name} is ${nameAgeMap[name]} years old.`);
+}
+
