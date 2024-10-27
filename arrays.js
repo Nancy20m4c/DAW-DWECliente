@@ -49,3 +49,24 @@ let data = [
 
   let mayoresDe30 = data.filter(persona => persona.age > 30);
   console.log(mayoresDe30);
+
+  //array numbers
+
+  let numbers = ["11", "2", "3", "4", "5", "6"];
+   let number1 = numbers[0];
+   let number2 = numbers[1];
+   
+
+  var resto = [];
+
+  // recorro nuymeros
+  numbers.forEach(
+    // capturo el valor y la posicione en el array
+    (value, index) => {
+      // evaluo y descarto las que tienen indice 0 y 1
+      if (index!=0 && index!=1) {
+        // añado el valor al array
+        resto.push(value);
+      }
+    });
+    console.log(number1, number2, resto)
